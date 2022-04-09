@@ -10,51 +10,51 @@
 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Personaldata">
     <fieldset>
 <legend>Личные данные</legend>
-<p><input type="text" placeholder="Фамилия" pattern="[A-Za-z]{n}" maxlength="25" autofocus required >* text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле) <br>
-<input type="text" placeholder="Имя" pattern="[A-Za-z]{n}" maxlength="20" required>* text: Только кириллица, без пробелов, длина поля 20, обязательно поле)<br>
-<input type="text" placeholder="Отчество" pattern="[A-Za-z]{n}" maxlength="24" required >* text: Только кириллица, без пробелов, длина поля 24, обязательное поле) </p>
+<p><input type="text" name="surname" placeholder="Фамилия" pattern="[A-Za-z]{n}" maxlength="25" autofocus required >* text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле) <br>
+<input type="text" name="name" placeholder="Имя" pattern="[A-Za-z]{n}" maxlength="20" required>* text: Только кириллица, без пробелов, длина поля 20, обязательно поле)<br>
+<input type="text" name="lastn" placeholder="Отчество" pattern="[A-Za-z]{n}" maxlength="24" required >* text: Только кириллица, без пробелов, длина поля 24, обязательное поле) </p>
 
 <fieldset>
     <legend>Паспортные данные</legend>
     <p>text: Серия - только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательно поле <br>
         text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле </p>
-        <input type="text" maxlength="2" size="2" pattern="[A-Z]{2,}" required>
-        <input type="text" maxlength="7" size="7" required pattern="[0-9]{7,}">
+        <input type="text" name="seria" maxlength="2" size="2" pattern="[A-Z]{2,}" required>
+        <input type="text" name="passport" maxlength="7" size="7" required pattern="[0-9]{7,}">
 </fieldset>
 <fieldset>
     <legend>Дата рождения</legend>
-    <p> <input type="text" pattern="[0-9]{4}" size="4">
+    <p> <input type="text" name="db" pattern="[0-9]{4}" size="4">
         text: Год рождения 4-е цифры <br>
         <select name="month">
-        <option value="m1">Jan</option>
-        <option value="m2">Feb</option>
-        <option value="m3">Mar</option>
-        <option value="m4">Apr</option>
-        <option value="m5">May</option>
-        <option value="m6">Jun</option>
-        <option value="m7">Jul</option>
-        <option value="m8">Aug</option>
-        <option value="m9">Sep</option>
-        <option value="m10">Oct</option>
-        <option value="m11">Nov</option>
-        <option value="m12">Dec</option>
+        <option value="Jan">Jan</option>
+        <option value="Feb">Feb</option>
+        <option value="Mar">Mar</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="Jun">Jun</option>
+        <option value="Jul">Jul</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
         </select>
         select:Месяц рождения <br>
-        <input type="number" pattern="[0-9]{1,2}" min="1" max="31" size="2">
+        <input type="number" name="month" pattern="[0-9]{1,2}" min="1" max="31" size="2">
         Number: Диапазон от 1 до 31 с шагом 1 <br>
        </fieldset>
 
        <select name="nation" required >
-        <option value="n1">Bel</option>
-        <option value="n2">Rus</option>
-        <option value="n3">Eng</option>
-        <option value="n4">French</option>
-        <option value="n5">Jap</option>
-        <option value="n6">Polish</option>
-        <option value="n7">Ital</option>
-        <option value="n8">Ukr</option>
-        <option value="n9">Chin</option>
-        <option value="n10">Amer</option>
+        <option value="Bel">Bel</option>
+        <option value="Rus">Rus</option>
+        <option value="Eng">Eng</option>
+        <option value="French">French</option>
+        <option value="Jap">Jap</option>
+        <option value="Polish">Polish</option>
+        <option value="Ital">Ital</option>
+        <option value="Ukr">Ukr</option>
+        <option value="Chin">Chin</option>
+        <option value="Amer">Amer</option>
        </select>
        (Национальность- выбор одного значения из списка, обязательное поле) <br>
        Адрес: <br>
@@ -75,19 +75,19 @@
             <p>array:select multiple</p>
             <select name="ani[]" size="12" multiple>
                 <optgroup  label="Попугаи" >
-            <option name="ani[]" value="p1">Волнистый</option>
-            <option name="ani[]" value="p2">Ара</option>
-            <option name="ani[]" value="p3">Неразлучный</option>
+            <option name="ani[]" value="Волнистый">Волнистый</option>
+            <option name="ani[]" value="Ара">Ара</option>
+            <option name="ani[]" value="Неразлучный">Неразлучный</option>
                 </optgroup>
                 <optgroup  label="Рыба" >
-            <option name="ani[]" value="f1">Караси</option>
-            <option name="ani[]" value="f2">Окуни</option>
-            <option name="ani[]" value="f3">Осётр</option>
+            <option name="ani[]" value="Караси">Караси</option>
+            <option name="ani[]" value="Окуни">Окуни</option>
+            <option name="ani[]" value="Осётр">Осётр</option>
                 </optgroup>
                 <optgroup   label="Птицы" >
-            <option name="ani[]" value="b1">Стая ворон</option>
-            <option name="ani[]" value="b2">Аист</option>
-            <option name="ani[]" value="b3">Археоптерикс</option>
+            <option name="ani[]" value="Стая ворон">Стая ворон</option>
+            <option name="ani[]" value="Аист">Аист</option>
+            <option name="ani[]" value="Археоптерикс">Археоптерикс</option>
                 </optgroup>
             </select>
         </fieldset>
@@ -95,24 +95,24 @@
 
     <fieldset>
         <legend>Данные для входа и восстановления пароля</legend>
-        <p><input type="text" required placeholder="Логин"  size="20" minlength="5" pattern="^[a-zA-Z]+$">
+        <p><input type="text" name="login" required placeholder="Логин"  size="20" minlength="5" pattern="^[a-zA-Z]+$">
         text: Только латиница, без пробелов, не менее 5 символов,длина поля 20, обязательное поле) <br>
-        <input type="password" placeholder="Пароль" pattern="^[a-zA-Z]+$" minlength="10" required size="20" autocomplete="off">
+        <input type="password" name="password" placeholder="Пароль" pattern="^[a-zA-Z]+$" minlength="10" required size="20" autocomplete="off">
         password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение
         </p>
     </fieldset>
     <fieldset>
         <legend>Координаты</legend>
-        <p><input type="email" placeholder="введите адрес почты"> email: проверка должна осуществляться при помощи новых атрибутов тега &#60;input&#62;) <br>
-            <input type="url" placeholder="введите адрес сайта"> url: проверка должна осуществляться при помощи новых атрибутов тега &#60;input&#62;
+        <p><input type="email" name="email" placeholder="введите адрес почты"> email: проверка должна осуществляться при помощи новых атрибутов тега &#60;input&#62;) <br>
+            <input type="url" name="url" placeholder="введите адрес сайта"> url: проверка должна осуществляться при помощи новых атрибутов тега &#60;input&#62;
         </p>
     </fieldset>
 
 <fieldset>
     <legend>Цифры</legend>
-   <p><input type="number" min="-2.5" max="2.5" step="0.1">
+   <p><input type="number" min="-2.5" max="2.5" step="0.1" name="digits">
     number: Диапазон от -2.5 до 2.5 с шагом 0.1 <br>
-    <input type="range" min="1" max="10">
+    <input type="range" min="1" max="10" name="rang">
     range: Максимальное 10 минимальное 1
    </p> 
 </fieldset>
