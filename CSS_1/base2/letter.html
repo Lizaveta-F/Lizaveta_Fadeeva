@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    @font-face {
+        font-family: "AlexBrush";
+        src: url("AlexBrush-Regular.ttf");
+    }
     <title>Document</title>
 
  <style>
-    
+   @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
     .h4
     {text-align: right; 
     font-stretch:ultra-condensed;
     }
     h4.h1
-    {font-family:Arial Narrow, sans-serif; 
+    {font-family:"AlexBrush", sans-serif; 
     text-decoration: underline; 
     text-align: left; 
     font-style: italic;
@@ -28,9 +33,10 @@
     {text-align: right;
     line-height: 1.2;
     font-stretch: extra-condensed;
-    font-family: 'Times New Roman', Times, serif;}
+    font-family: 'News Cycle',sans-serif;}
     div p
-    {font-family: Snell Roundhand, cursive;
+    {
+    font-family: 'Send Flowers', cursive;
     font-weight: lighter;
     font-style: oblique;
     line-height: 1.8;
@@ -41,7 +47,7 @@
     p.down
     {line-height: 1.9;
     font-stretch: extra-condensed;
-    font-family: 'Times New Roman', Times, serif;}
+    font-family: 'News Cycle',sans-serif;}
     p.mid
     {text-indent: 50px;
     font-size: smaller;
