@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>CSS2_3</title>
+<style>
+body{
+    display: flex;
+flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-color:rgb(214, 209, 202);
+    display: flex;
+    }
+.block{
+width: 15em; 
+background-color: rgb(192, 185, 178);
+padding: 7px 0px;
+}
+.st1{
+padding-top: 7px ;
+background-color: rgb(138, 127, 127);
+margin-bottom: .2em;
+margin-left: 15em;
+}
+img{
+    float:right;
+    width: 200px;
+    height: 200px;
+}
+.rasp{
+    width: 0.1px;
+}
+.podval{
+margin-top: .2em;
+background-color: darkgray;
+height: fit-content;
+}
+</style>
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="block">
+            <h4>Блок навигации</h4> 
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, 
+                        чтобы по высоте он начал захватывать вторую статью, как показано в данном примере</li>
+                </ul> 
+        </div> 
+        <div class="right">
+        <div class="st1">
+            <h4>Статья 1</h4>
+Размер блока:
+Занимает всю доступную ширину
+Должен присутствовать цвет фона
+Во всех "статьях" сделайте отсутп снизу от соседей равным .2em, при помощи свойства margin-botton
+        </div>
+        <div class="st1">
+            <h4>Статья 2</h4>
+Размер блока:
+Занимает всю доступную ширину
+Должен присутствовать цвет фона
+Во всех "статьях" сделайте отсутп снизу от соседей равным .2em, при помощи свойства margin-botton. 
+Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="icon_mail.png" alt="message" class="img">
+<div class="rasp"></div>
+        </div>
+    </div>
+    </div>
+    <div class="podval">
+Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+    </div>
+</body>
+</html>
