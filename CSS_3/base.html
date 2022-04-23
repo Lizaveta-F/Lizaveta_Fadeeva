@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_3_base</title>
+<style>
+div.days>div {
+    background-color: bisque; 
+    border: solid black 1px; 
+    border-radius: 4px; 
+    position: relative; 
+    cursor: pointer;
+    display:inline-block ;
+    width: 100px ;
+    margin-left: -3px;
+    text-align: center;}
+div.menu>div{
+    background-color: aqua; 
+    border: solid rebeccapurple 1px; 
+    border-radius: 4px;
+    cursor: pointer;}
+.menu{   
+    width: 100px;
+    display: none;}
+div.days div:hover > div.menu{display: block; position: absolute; left: 0px; top: 20px; z-index: 1}
+                
+    @media all and (max-width:632px){
+        div.days>div {
+    background-color: bisque; 
+    border: solid black 1px; 
+    border-radius: 4px; 
+    position: relative; 
+    cursor: pointer;
+    width: 100px ;
+    display: block;
+    margin-left: -3px;
+    text-align: center;}
+div.menu>div{
+    background-color: aqua; 
+    border: solid rebeccapurple 1px; 
+    border-radius: 4px;
+    cursor: pointer;
+    }
+.menu{   
+    width: 100px;
+    display: none;
+    }
+div.days div:hover > div.menu{display: block; position: absolute; left: 100px; top: 0px; z-index: 1} 
+    }
+
+</style>
+
+</head>
+<body>
+    
+    <div class="days">
+        <div >Понедельник</div>
+        <div >Вторник</div>
+        <div >    Среда
+            <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+            </div>
+        </div>
+        <div >Четверг</div>
+        <div >Пятница</div>
+        <div >Суббота</div>
+    </div>
+</body>
+</html>
