@@ -5,10 +5,9 @@
     
     <title>Document</title>
     <style>
-        body{
-            counter-reset: count 65;
-        }
+        
     table{
+        counter-reset: digit 65;
         width: 600px;
         height: 600px;
         border: 10px black solid;
@@ -16,14 +15,20 @@
     }
     tr:nth-child(odd) td:nth-child(odd) {
         background-color: black;
+        color: white;
         
     }
     tr:nth-child(even) td:nth-child(even) {
         background-color: black;
+        color: white;
     }
-    tr td{
-        counter-increment: count -1;
-        content: counter(count);
+    td{
+        text-align: center;
+        font-size: 2em;
+    }
+    td::before{
+        counter-increment: digit -1;
+        content: counter(digit);
     }
 
     </style>
